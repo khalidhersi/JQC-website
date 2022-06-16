@@ -768,6 +768,9 @@ p.dropcap span.first-letter { font-size: 55px; float: left; color: #003d5b; text
 
 #main-nav > ul > li.menu-item-has-children > a { position: relative; padding-right: 15px; }
 #main-nav > ul > li.menu-item-has-children > a:after { content: "\f107"; font-family: "FontAwesome"; position: absolute; right: 0; top: 0; }
+#bottom > ul > li.menu-item-has-children > a { position: relative; padding-right: 15px; }
+#bottom > ul > li.menu-item-has-children > a:after { content: "\f107"; font-family: "FontAwesome"; position: absolute; right: 0; top: 0; }
+
 
 /* Re-style Navigation for header two, three, five */
 #site-header.style-2 #main-nav > ul > li > a,
@@ -795,13 +798,14 @@ p.dropcap span.first-letter { font-size: 55px; float: left; color: #003d5b; text
 #site-header.is-sticky:after {  opacity: 0.8; }
 
 /* Sub Menu */
-#main-nav .sub-menu { position: absolute; left: 0; top: 100%; width: 220px; filter: alpha(opacity=0); opacity: 0; visibility: hidden; z-index: 9999;
+#main-nav .sub-menu  { position: absolute; left: 0; top: 100%; width: 220px; filter: alpha(opacity=0); opacity: 0; visibility: hidden; z-index: 9999;
     -webkit-transition: all ease .238s; -moz-transition: all ease .238s; transition: all ease .238s;
     -webkit-transform: translateY(3px); -moz-transform: translateY(3px); transform: translateY(3px);
 	-webkit-box-shadow: inset 0 12px 19px rgba(255,255,255,0.1), 0 1px 7px rgba(0,0,0,0.2);
 	   -moz-box-shadow: inset 0 12px 19px rgba(255,255,255,0.1), 0 1px 7px rgba(0,0,0,0.2);
 	        box-shadow: inset 0 12px 19px rgba(255,255,255,0.1), 0 1px 7px rgba(0,0,0,0.2);
 }
+
 
 #main-nav .sub-menu li a { background-color: #fff; color: #252525; font-size: 0.928em; font-family: "Montserrat", sans-serif; font-weight: 500; display: block; text-transform: uppercase; border-top: 1px solid #eaeaea; padding: 10px 19px; line-height: 24px; }
 #main-nav .sub-menu li:first-child a { border-top: 0; }

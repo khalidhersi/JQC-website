@@ -81,6 +81,9 @@
                 // Scroll to Top
                 self.scrollToTop();
 
+                // Scroll to contact
+                self.scrollToContact();
+
                 // Tweet Slider
                 self.tweetSlider();
 
@@ -216,7 +219,7 @@
         },
 
         scrollTarget: function() {
-            $('.scroll-target, .one-page #main-nav > ul > li > a').on('click',function() {
+            $('.scroll-target, .one-page #main-nav > ul > li > a, .one-page #bottom-nav > ul > li > a').on('click',function() {
                 var anchor = $(this).attr('href').split('#')[1];
 
                 $(this).parent()
@@ -239,6 +242,7 @@
                 return false;
             })
         },
+        
 
         tabs: function() {
             $('.woocommerce-tabs').each(function() {
@@ -582,6 +586,22 @@
             return false;
             });
         },
+        // scrollToContact: function() {
+        //     var scrollBtn = $('#contact_btn');
+            
+        //     $(window).on('scroll', function() {
+        //         if ( $(this).scrollTop() > 800 ) {
+        //             scrollBtn.addClass('show');
+        //         } else {
+        //             scrollBtn.removeClass('show');
+        //         }
+        //     });
+
+        //     scrollBtn.on('click', function() {
+        //         $('html, body').animate({ scrollTop: 0 }, 1000 , 'easeInOutExpo');
+        //     return false;
+        //     });
+        // },
 
         featuredMedia: function() {
             if ( $().cubeportfolio ) {
