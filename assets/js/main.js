@@ -84,6 +84,9 @@
                 // Scroll to contact
                 self.scrollToContact();
 
+                // Scroll to about
+                self.scrollToAbout();
+
                 // Tweet Slider
                 self.tweetSlider();
 
@@ -586,23 +589,59 @@
             return false;
             });
         },
-        // scrollToContact: function() {
-        //     var scrollBtn = $('#contact_btn');
-            
-        //     $(window).on('scroll', function() {
-        //         if ( $(this).scrollTop() > 800 ) {
-        //             scrollBtn.addClass('show');
-        //         } else {
-        //             scrollBtn.removeClass('show');
-        //         }
-        //     });
-
-        //     scrollBtn.on('click', function() {
-        //         $('html, body').animate({ scrollTop: 0 }, 1000 , 'easeInOutExpo');
-        //     return false;
-        //     });
-        // },
-
+        scrollToContact: function() {
+            var scrollBtn = $('#contact_btn');
+            $('.scroll-target, .one-page #contact_btn > a').on('click',function() {
+                    var anchor = $(this).attr('href').split('#')[1];
+                    console.log(anchor)
+    
+                    $(this).parent()
+                        .addClass('current-menu-item')
+                        .siblings()
+                            .removeClass('current-menu-item');
+    
+                    if ( anchor ) {
+                        if ( $('#'+anchor).length > 0 ) {
+                            var headerHeight = 0;
+    
+                            if ( $('body').hasClass('header-sticky') )
+                                headerHeight = $('#site-header').height();
+    
+                            var target = $('#' + "contact").offset().top - headerHeight;
+    
+                            $('html,body').animate({scrollTop: target}, 1200, 'easeInOutExpo');
+                       }
+                    }
+                    return false;
+                })
+            },
+            scrollToAbout: function() {
+                var scrollBtn = $('#contact_btn');
+                $('.scroll-target, .one-page #learn_more_btn > a').on('click',function() {
+                        var anchor = $(this).attr('href').split('#')[1];
+                        console.log(anchor)
+        
+                        $(this).parent()
+                            .addClass('current-menu-item')
+                            .siblings()
+                                .removeClass('current-menu-item');
+        
+                        if ( anchor ) {
+                            if ( $('#'+anchor).length > 0 ) {
+                                var headerHeight = 0;
+        
+                                if ( $('body').hasClass('header-sticky') )
+                                    headerHeight = $('#site-header').height();
+        
+                                var target = $('#' + "intro").offset().top - headerHeight;
+        
+                                $('html,body').animate({scrollTop: target}, 1200, 'easeInOutExpo');
+                           }
+                        }
+                        return false;
+                    })
+                },
+    
         featuredMedia: function() {
             if ( $().cubeportfolio ) {
                 $('.blog-slider').each(function () {
