@@ -1202,7 +1202,7 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 #sidebar .widget.widget_tag_cloud .tagcloud a:hover,
 #footer-widgets .widget.widget_tag_cloud .tagcloud a:hover { color: #fff; }
 
-/* Widget Twitter */
+/* Widget twitter */
 #sidebar .widget.widget_twitter .tweets-slider.grid .cbp-item,
 #footer-widgets .widget.widget_twitter .tweets-slider.grid .cbp-item { padding-bottom: 15px; margin-bottom: 15px; padding-left: 32px; border-bottom: 1px solid #eaeaea; }
 #sidebar .widget.widget_twitter .tweets-slider.grid .cbp-item:last-child,

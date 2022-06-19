@@ -18,7 +18,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 Plugin: jQuery Parallax
 Version 1.1.3
 Author: Ian Lunn
-Twitter: @IanLunn
+twitter: @IanLunn
 Author URL: http://www.ianlunn.co.uk/
 Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
 
