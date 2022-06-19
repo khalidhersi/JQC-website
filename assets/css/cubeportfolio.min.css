@@ -3829,17 +3829,23 @@
     background: #7c8b90;
     cursor: pointer;
     display: inline-block;
-    margin-left: 1px;
-    height: 22px;
-    width: 21px
+    height: 4rem;
+    width: 4rem;
 }
 
 .cbp-nav-next {
-    border-radius: 0 2px 2px 0
+    border-radius: 0 1rem 1rem 0;
+    position: absolute;
+    top: 5rem;
+    left: 98%;
 }
 
 .cbp-nav-prev {
-    border-radius: 2px 0 0 2px
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+    top: 5rem;
+    right: 98%;
+    
 }
 
 .cbp-nav-next:hover,
@@ -3883,6 +3889,7 @@
 
 .cbp-nav-controls {
     position: absolute;
+    width: 100%;
     top: -51px;
     right: 0;
     z-index: 100

@@ -1339,7 +1339,7 @@
 .wprt-testimonials.has-arrows .cbp-nav-controls { display: block; }
 .wprt-testimonials.has-arrows.arrow30 #testimonials-wrap .cbp-nav-controls { top: -60px; }
 .wprt-testimonials.has-arrows.arrow40 #testimonials-wrap .cbp-nav-controls { top: -70px; }
-.wprt-testimonials.has-arrows.arrow50 #testimonials-wrap .cbp-nav-controls { top: -80px; }
+.wprt-testimonials.has-arrows.arrow50 #testimonials-wrap .cbp-nav-controls { top: 10rem; }
 .wprt-testimonials.has-arrows.arrow60 #testimonials-wrap .cbp-nav-controls { top: -90px; }
 .wprt-testimonials.bullet-left .cbp-nav-pagination { text-align: left; }
 .wprt-testimonials.bullet-right .cbp-nav-pagination { text-align: right; }

@@ -708,7 +708,7 @@
                     showNavigation: true,
                     showPagination: true,
                     gridAdjustment: 'responsive',
-                    rewindNav: false,
+                    rewindNav: true,
                     auto: true,
                     mediaQueries: [{
                         width: 1500,
@@ -743,15 +743,15 @@
                         responsive: true,
                         items: 1,
                         navigationText: false,
-                        itemsDesktop: [3000,5],
-                        itemsDesktopSmall: [1400,4],
-                        itemsTablet:[970,3],
-                        itemsTabletSmall: [600,2],
-                        itemsMobile: [360,1],
+                        itemsDesktop: [1000,5],
+                        itemsDesktopSmall: [900,4],
+                        itemsTablet:[470,3],
+                        itemsTabletSmall: [500,2],
+                        itemsMobile: [160,1],
                         touchDrag: true,
                         mouseDrag: true,
                         autoHeight: false,
-                        autoPlay: false
+                        autoPlay: true
                     });
                 });
             }
